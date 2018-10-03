@@ -1,0 +1,17 @@
+---
+- name: Check if "installimage" script exists
+  stat:
+    path: /root/.oldroot/nfs/install/installimage
+  register: stat_result
+
+- block:
+    - debug:
+        msg: "installimage script not found."
+    - meta: end_play
+  when: stat_result.stat.exists == false
+
+- name: Execute installimage
+  shell: "{{ install_image.path }} -a -n {{ inventory_hostname }} -b grub -r {{ install_image.raid }} -i {{ install_image.image }} -p /boot:ext3:512M,/:ext4:all -d {{ install_image.drives }}"
+
+- name: Rebooting...
+  shell: reboot

@@ -1,0 +1,1 @@
+/root/.oldroot/nfs/install/installimage -a -n happy1.happycoders.eu -b grub -r yes -l 1 -i /root/.oldroot/nfs/images/Debian-95-stretch-64-minimal.tar.gz -p /boot:ext3:512M,/:ext4:all -d sda,sdb

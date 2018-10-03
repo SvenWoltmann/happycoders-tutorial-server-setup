@@ -1,0 +1,7 @@
+---
+install_image:
+  path: /root/.oldroot/nfs/install/installimage
+  raid: yes -l 1
+  image: /root/.oldroot/nfs/images/Debian-95-stretch-64-minimal.tar.gz
+  drives: sda,sdb
+
