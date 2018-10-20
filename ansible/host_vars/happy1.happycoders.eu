@@ -5,3 +5,11 @@ install_image:
   image: /root/.oldroot/nfs/images/Debian-95-stretch-64-minimal.tar.gz
   drives: sda,sdb
 
+passwordless_sudo: true
+
+ssh_port: 5930
+
+firewall_allowed_tcp_ports:
+  - 80
+  - 443
+  - 5930

@@ -1,0 +1,4 @@
+---
+- import_tasks: setup_sudo.yml
+- import_tasks: setup_users.yml
+- import_tasks: upload_pubkeys.yml

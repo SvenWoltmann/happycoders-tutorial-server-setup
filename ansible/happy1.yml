@@ -1,0 +1,13 @@
+---
+- hosts: happy1.happycoders.eu
+  remote_user: sven
+  become: yes
+  vars:
+    ansible_port: "{{ ssh_port | default('22') }}"
+  roles:
+  - hostnames
+  - users
+  - ssh
+  - aliases
+  - tools
+  - geerlingguy.firewall
