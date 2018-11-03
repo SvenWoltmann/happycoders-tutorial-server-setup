@@ -13,3 +13,4 @@
   - geerlingguy.firewall
   - geerlingguy.docker
   - wordpress_docker
+  - happy1_haproxy

@@ -13,7 +13,6 @@ firewall_allowed_tcp_ports:
   - 80
   - 443
   - 5930
-  - 8001
 
 docker_package: docker-ce=18.06.1~ce~3-0~debian
 docker_compose_version: 1.23.1
@@ -36,3 +35,18 @@ wordpress_docker:
           38363136643165623032636263366335613034633332396466303864343163386539663162613764
           6337353765666133630a363030313437646531636339626634363638633830633464373366616634
           3931
+
+happycoders_testing: true
+
+happycoders_domains:
+  - happycoders.eu
+  - happycoders.at
+  - happycoders.biz
+  - happycoders.ch
+  - happycoders.club
+  - happycoders.de
+  - happycoders.info
+  - happycoders.it
+  - happycoders.me
+  - happycoders.net
+  - happycoders.uk
