@@ -11,3 +11,5 @@
   - aliases
   - tools
   - geerlingguy.firewall
+  - geerlingguy.docker
+  - wordpress_docker
